@@ -3,10 +3,7 @@ Console.WriteLine("Please enter your message here: ");
 string userSecretMessage = Console.ReadLine();
 char [] secretMessage = userSecretMessage.ToCharArray();
 
-
 char[] encryptedMessage = new char [secretMessage.Length];
-
-
 
 for (int i = 0; i < secretMessage.Length; i++)
 {
@@ -20,6 +17,5 @@ for (int i = 0; i < secretMessage.Length; i++)
 string finalWord = string.Join("", encryptedMessage); //needed to use string.Join because we need to combine the characters together
                                                       //can't use encryptedMessage in Console.WriteLine because Console.WriteLine only takes strings
 Console.WriteLine($"{finalWord} is the secret word");
-
 
 
